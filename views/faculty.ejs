@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./metadata.ejs') %>
+        <title>AAS -- Faculty</title>
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="intro_section.css">
+        <link rel="stylesheet" href="attendance_section.css">
+</head>
+
+<body>
+    <header>
+        <%- include('./navbar/_navbar.ejs') %>
+    </header>
+
+    <%- include('./partials/_intro_section.ejs') %>
+        <%- include('./partials/_attend_section.ejs') %>
+
+            <script src="redirect_attend.js"></script>
+</body>
+
+</html>

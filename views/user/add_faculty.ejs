@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../metadata.ejs') %>
+        <title>Add Faculty</title>
+        <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="nav.css">
+</head>
+
+<body>
+    <%- include('../navbar/_nav.ejs') %>
+
+        <div class="signup-container">
+            <div class="signup-sections">
+                <div class="left-section">
+                    <img src="login_image.svg" alt="signup image">
+                </div>
+                <div class="right-section">
+                    <h2>
+                        <%= heading %>
+                    </h2>
+                    <i class='bx bxs-user-plus'></i>
+                    <div class="signup-form">
+                        <form action="/add_faculty" method="post">
+                            <div class="form-entry">
+                                <label>Name : </label>
+                                <input type="text" name="name" placeholder="Ex. Mohd Zeeshan">
+                            </div>
+
+                            <div class="form-entry">
+                                <label>Username : </label>
+                                <input type="text" name="username" placeholder="Ex. zeeshan123">
+                            </div>
+
+                            <div class="form-entry">
+                                <label class="red-asterisk">Email :</label>
+                                <input type="email" name="email" placeholder="example@gmail.com" required>
+                            </div>
+
+                            <div class="form-entry">
+                                <label>Contact No. :</label>
+                                <input type="text" name="contactno" placeholder="9876543210">
+                            </div>
+
+                            <div class="form-entry">
+                                <label class="red-asterisk">Password :</label>
+                                <input type="password" name="password" placeholder="password please" required>
+                            </div>
+
+                            <div class="form-entry">
+                                <label class="red-asterisk">Confirm Password :</label>
+                                <input type="password" name="confirm_password" placeholder="confirm password" required>
+                            </div>
+
+                            <button class="submit-btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

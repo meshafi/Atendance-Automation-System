@@ -1,0 +1,79 @@
+<style>
+    .attend-detail {
+        margin-top: 1rem;
+    }
+
+    .subdetail-1,
+    .subdetail-2 {
+        display: flex;
+        justify-content: space-between;
+        margin: 6px 4rem;
+    }
+
+    .subdetail-2 div {
+        display: flex;
+        font-weight: lighter;
+    }
+
+    .subdetail-2 div select {
+        margin-left: 12px;
+        padding: 2px 3px;
+    }
+
+    .attend-detail h4 {
+        font-weight: 500;
+    }
+
+    @media screen and (max-width: 1024px) {
+        .attend-detail {
+            margin-left: 4px;
+            margin-right: 4px;
+        }
+
+        .subdetail-1,
+        .subdetail-2 {
+            display: block;
+            text-align: center;
+        }
+
+        .subdetail-2 div {
+            margin: 4px;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+</style>
+
+<div class="attend-detail">
+    <div class="subdetail-1">
+        <div class="date">
+            <h4>Date: <span>23-03-2023</span></h4>
+        </div>
+        <div class="course">
+            <h4>Class: <span>B.Tech 2nd year</span></h4>
+        </div>
+    </div>
+
+    <div class="subdetail-2">
+        <div class="subject">
+            <h4>Subject: </h4>
+            <select name="" id="">
+                <option value="">Computer Networking</option>
+                <option value="">Compiler Design</option>
+                <option value="">Data Structure</option>
+                <option value="">Python Workshop</option>
+                <option value="">Computer Organization</option>
+            </select>
+        </div>
+        <div class="semseter">
+            <h4>Semester: </h4>
+            <select name="" id="">
+                <option value="">First Semester</option>
+                <option value="">Second Semester</option>
+                <option value="">Third Semester</option>
+                <option value="">Fourth Semester</option>
+                <option value="">Fifth Semester</option>
+            </select>
+        </div>
+    </div>
+</div>

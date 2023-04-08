@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    text-align: center;
+}
+h2 {
+    margin-top: 1.2rem;
+}
+p {
+    margin-bottom: 0.6rem;
+}
+section {
+    max-width: 900px;
+    margin: auto;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+table thead tr {
+    color: #fff;
+    background: grey;
+    font-weight: bold;
+}
+th,
+td {
+    padding: 1rem 0px;
+}
+table tbody tr:nth-of-type(odd) {
+    background: #f3f3f3;
+}
+button {
+    cursor: pointer;
+    padding: 6px 15px;
+    margin: 0px 6px;
+}

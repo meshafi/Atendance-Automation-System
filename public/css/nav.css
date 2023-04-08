@@ -1,0 +1,32 @@
+body {
+    font-family: var(--heading-font);
+}
+nav {
+    background: var(--light);
+    display: flex;
+    justify-content: space-between;
+    height: 61px;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+        rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    padding: 0px 3.5rem;
+}
+.landing-brand {
+    margin-top: 12px;
+}
+.landing-brand a {
+    text-decoration: none;
+    color: var(--dark);
+    padding: 0.3rem;
+}
+.landing-brand a i {
+    font-size: 24px;
+    rotate: 45deg;
+}
+.landing-brand a span {
+    font-size: 29px;
+    margin-left: 4px;
+    font-weight: bold;
+}
+.landing-date {
+    margin-top: 20px;
+}

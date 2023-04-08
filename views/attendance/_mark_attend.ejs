@@ -1,0 +1,49 @@
+<div class="mark-attend-container">
+    <div class="mark-attend-header">
+        <h2>Mark Attendance</h2>
+        <a class="open-popup">Calender</a>
+    </div>
+
+    <%- include('./_attend_detail.ejs') %>
+
+        <hr>
+        <form action="/mark_attendance" method="post">
+            <table>
+                <tr>
+                    <th>S.No.</th>
+                    <th>Name</th>
+                    <th>Roll No.</th>
+                    <th class="toggle">
+                        Status <br>
+                        <a class="toggle-status">toggle</a>
+                    </th>
+                </tr>
+                <tr>
+                    <!-- <td>0.</td>
+                    <td>Mohd Waqar Hashim</td>
+                    <td>19BTCS051HY</td>
+                    <td><input type="checkbox"></td> -->
+                </tr>
+            </table>
+            <%- include('./_attend_action_btn.ejs') %>
+        </form>
+</div>
+
+<!-- popup modal -->
+<div class="modal">
+    <div class="modal-box">
+        <div class="close-btn">
+            <h4>&times;</h4>
+        </div>
+        <div class="data">
+            <%- include('./_attend_detail.ejs') %>
+                <hr>
+
+                <div class="all-btns">
+                    <button class="1">0</button>
+                </div>
+
+                <%- include('./_attend_action_btn.ejs') %>
+        </div>
+    </div>
+</div>

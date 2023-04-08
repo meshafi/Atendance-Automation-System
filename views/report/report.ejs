@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../metadata.ejs') %>
+        <title>Report</title>
+        <link rel="stylesheet" href="root.css">
+        <link rel="stylesheet" href="report.css">
+</head>
+
+<body>
+    <div class="report">
+        <div class="header">
+            <h3>MAULANA AZAD NATIONAL URDU UNIVERSITY</h3>
+            <h3>HYDERABAD, TS</h3>
+            <br>
+            <p>Semester Attendance Report 2022-23</p>
+            <br>
+            <p>Note: Include all basic details of student such as Name, Class, Semester, Roll No. etc</p>
+        </div>
+        <hr>
+
+        <div class="content">
+            <table>
+                <tr>
+                    <th>S.No.</th>
+                    <th>Subject</th>
+                    <th>Paper Code</th>
+                    <th>Classes <br> Held</th>
+                    <th>Classes <br> Attended</th>
+                    <th>Month
+                        <hr>Percentage
+                    </th>
+                </tr>
+                <tr>
+                    <td rowspan="4">1.</td>
+                    <td>Computer Organization</td>
+                    <td>PCB1011</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td rowspan="4">February <br> 70</td>
+                </tr>
+                <tr>
+                    <td>Computer Organization</td>
+                    <td>PCB1011</td>
+                    <td>NA</td>
+                    <td>NA</td>
+                </tr>
+                <tr>
+                    <td>Computer Organization</td>
+                    <td>PCB1011</td>
+                    <td>12</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>Computer Organization</td>
+                    <td>PCB1011</td>
+                    <td>12</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">2.</td>
+                    <td>Computer Networking</td>
+                    <td>PCB0011</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td rowspan="3">August <br> 80</td>
+                </tr>
+                <tr>
+                    <td>Computer Networking</td>
+                    <td>PCB0011</td>
+                    <td>12</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>Computer Networking</td>
+                    <td>PCB0011</td>
+                    <td>12</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>Computer Networking</td>
+                    <td>PCB0011</td>
+                    <td>12</td>
+                    <td>9</td>
+                    <td>August <br> 80</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>Computer Networking</td>
+                    <td>PCB0011</td>
+                    <td>12</td>
+                    <td>9</td>
+                    <td>August <br> 80</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>Computer Networking</td>
+                    <td>PCB0011</td>
+                    <td>12</td>
+                    <td>9</td>
+                    <td>August <br> 80</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="action">
+            <button class="action-btn">Report</button>
+        </div>
+    </div>
+
+    <script>
+        const btn = document.querySelector('.action-btn');
+
+        btn.addEventListener('click', () => {
+            btn.style.display = 'none';
+            window.print();
+            location.reload();
+        })
+    </script>
+</body>
+
+</html>

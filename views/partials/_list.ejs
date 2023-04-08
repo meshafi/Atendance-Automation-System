@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../metadata.ejs') %>
+        <title>List of Student</title>
+        <link rel="stylesheet" href="root.css">
+        <link rel="stylesheet" href="nav.css">
+        <link rel="stylesheet" href="list.css">
+</head>
+
+<body>
+    <%- include('../navbar/_nav.ejs') %>
+        <div class="container">
+            <h2>Student List</h2>
+            <p>For View Attendance</p>
+            <section>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>S.No.</th>
+                            <th>Name</th>
+                            <th>Roll No.</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- <tr>
+                            <td>1</td>
+                            <td>Ghulam Mustafa</td>
+                            <td>19BTCS051HY</td>
+                            <td><a href="#">
+                                    <button>View</button>
+                                </a></td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+        <script src="ls.js"></script>
+</body>
+
+</html>

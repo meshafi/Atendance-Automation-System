@@ -1,0 +1,55 @@
+body {
+    font-family: var(--para-font);
+}
+.hr {
+    margin: 8px 3px;
+}
+.report {
+    margin-left: 14%;
+    margin-right: 14%;
+    overflow: auto;
+}
+.header {
+    text-align: center;
+    margin: 1rem;
+    padding: 12px;
+}
+.header h3 {
+    font-weight: 400;
+}
+/* table content */
+table {
+    padding: 4px;
+    width: 100%;
+}
+table tr th {
+    border: 1px solid black;
+    font-weight: 500;
+    padding: 3px;
+}
+table tr td {
+    border: 1px solid black;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 3px 6px;
+    white-space: nowrap;
+}
+.action {
+    text-align: center;
+}
+.action button {
+    margin: 3px;
+    padding: 4px 12px;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 768px) {
+    .report {
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+    table tr th,
+    table tr td {
+        font-size: 13px;
+    }
+}
